@@ -15,6 +15,7 @@ from pm4pyws.util import constants as ws_constants
 
 from pm4pyws.handlers.xes.alignments import get_align
 from pm4pyws.handlers.xes.cases import variants
+from pm4pyws.handlers.xes.trace_cluster import dendrogram
 from pm4pyws.handlers.xes.ctmc import transient
 from pm4pyws.handlers.xes.filtering import factory as filtering_factory
 from pm4pyws.handlers.xes.process_schema import factory as process_schema_factory
@@ -319,6 +320,13 @@ class XesHandler(object):
         parameters[constants.PARAMETER_CONSTANT_ACTIVITY_KEY] = self.activity_key
         parameters[constants.PARAMETER_CONSTANT_ATTRIBUTE_KEY] = self.activity_key
         return events_per_time.get_events_per_time_svg(self.log, parameters=parameters)
+
+    def get_dendrogram_svg(self, parameters=None):
+        if parameters is None:
+            parameters = {}
+        parameters[constants.PARAMETER_CONSTANT_ACTIVITY_KEY] = self.activity_key
+        parameters[constants.PARAMETER_CONSTANT_ATTRIBUTE_KEY] = self.activity_key
+        return dendrogram.get_dendrogram_svg(self.log, parameters=parameters)
 
     def get_variant_statistics(self, parameters=None):
         """

@@ -351,6 +351,49 @@ def get_events_per_time():
 
     return ret
 
+@PM4PyServices.app.route("/getDendrogram", methods=["GET"])
+def get_dendrogram():
+    """
+        Gets the Event per Time graph
+
+        Returns
+        -------------
+        dictio
+            JSONified dictionary that contains in the 'base64' entry the SVG representation
+            of the dendrogram graph
+        """
+    clean_expired_sessions()
+
+    # reads the session
+    session = request.args.get('session', type=str)
+    # reads the requested process name
+    process = request.args.get('process', default='receipt', type=str)
+
+    logging.info("get_events_per_time start session=" + str(session) + " process=" + str(process))
+
+    dictio = {}
+
+    if check_session_validity(session):
+        user = get_user_from_session(session)
+        if lh.check_user_log_visibility(user, process):
+            Commons.semaphore_matplot.acquire()
+            try:
+                base64, gviz_base64, ret = lh.get_handler_for_process_and_session(process,
+                                                                                  session).get_dendrogram_svg()
+
+                dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "d3Dendro": ret}
+
+            except:
+                logging.error(traceback.format_exc())
+                dictio = {"base64": "", "gviz_base64": "", "d3Dendro":[]}
+            Commons.semaphore_matplot.release()
+
+        logging.info(
+            "get_events_per_time complete session=" + str(session) + " process=" + str(process) + " user=" + str(user))
+
+    ret = jsonify(dictio)
+
+    return ret
 
 @PM4PyServices.app.route("/getSNA", methods=["GET"])
 def get_sna():
