@@ -29,10 +29,11 @@ def get_dendrogram_svg(log, parameters=None):
 
     list_of_vals = []
     list = []
-    list_of_vals_len = attributes_filter.get_trace_attribute_values(log, 'concept:name')
-    print(list_of_vals_len)
-    for i in range(len(list_of_vals_len)):
-        list_of_vals.append(str(i + 1))
+    list_of_vals_dict = attributes_filter.get_trace_attribute_values(log, 'concept:name')
+    # print(list_of_vals_dict.keys())
+    list_of_vals_keys = sorted(list_of_vals_dict.keys())
+    for i in range(len(list_of_vals_keys)):
+        list_of_vals.append(list_of_vals_keys[i])
 
     for i in range(len(list_of_vals)):
         logsample = merge_log.log2sublog(log, list_of_vals[i])
