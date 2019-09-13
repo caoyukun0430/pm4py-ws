@@ -321,12 +321,12 @@ class XesHandler(object):
         parameters[constants.PARAMETER_CONSTANT_ATTRIBUTE_KEY] = self.activity_key
         return events_per_time.get_events_per_time_svg(self.log, parameters=parameters)
 
-    def get_dendrogram_svg(self, parameters=None):
+    def get_dendrogram_svg(self, variant='VARIANT_DMM_LEVEN', parameters=None):
         if parameters is None:
             parameters = {}
         parameters[constants.PARAMETER_CONSTANT_ACTIVITY_KEY] = self.activity_key
         parameters[constants.PARAMETER_CONSTANT_ATTRIBUTE_KEY] = self.activity_key
-        return dendrogram.get_dendrogram_svg(self.log, parameters=parameters)
+        return dendrogram.get_dendrogram_svg(self.log, variant=variant, parameters=parameters)
 
     def get_variant_statistics(self, parameters=None):
         """
@@ -531,7 +531,12 @@ class XesHandler(object):
         attributes_list
             List of attributes
         """
-        return attributes_filter.get_all_event_attributes_from_log(self.log)
+        event_att = attributes_filter.get_all_event_attributes_from_log(self.log)
+        trace_att = attributes_filter.get_all_trace_attributes_from_log(self.log)
+        print(trace_att)
+        print(event_att)
+        print(event_att | trace_att)
+        return event_att | trace_att
 
     def get_attribute_values(self, attribute_key, parameters=None):
         """
@@ -547,6 +552,17 @@ class XesHandler(object):
         parameters[constants.PARAMETER_CONSTANT_ACTIVITY_KEY] = self.activity_key
         parameters[constants.PARAMETER_CONSTANT_ATTRIBUTE_KEY] = attribute_key
         initial_dict = attributes_filter.get_attribute_values(self.log, attribute_key, parameters=parameters)
+        print(initial_dict)
+        print("lenini",len(initial_dict))
+
+        initial_dict_trace = attributes_filter.get_trace_attribute_values(self.log, attribute_key, parameters=parameters)
+        print(initial_dict_trace)
+        print("lenini_trace", len(initial_dict_trace))
+        #
+        # if (len(initial_dict)==0):
+        #     initial_dict = initial_dict_trace
+        #
+        # print(initial_dict)
         return_dict = {}
         for key in initial_dict:
             return_dict[str(key)] = int(initial_dict[key])

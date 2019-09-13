@@ -378,8 +378,10 @@ def get_dendrogram():
         if lh.check_user_log_visibility(user, process):
             Commons.semaphore_matplot.acquire()
             try:
+                clusterMethod = request.args.get('clusterMethod', default='VARIANT_DMM_LEVEN', type=str)
+                print("clustermethod",'VARIANT_DMM_LEVEN')
                 base64, gviz_base64, ret = lh.get_handler_for_process_and_session(process,
-                                                                                  session).get_dendrogram_svg()
+                                                                                  session).get_dendrogram_svg(variant=clusterMethod)
 
                 dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "d3Dendro": ret}
 
@@ -421,6 +423,7 @@ def get_sna():
             if lh.check_user_log_visibility(user, process):
                 metric = request.args.get('metric', default='handover', type=str)
                 threshold = request.args.get('threshold', default=0.0, type=float)
+                print("entrymetric",metric)
                 sna = lh.get_handler_for_process_and_session(process, session).get_sna(variant=metric, parameters={
                     "weight_threshold": threshold})
 
