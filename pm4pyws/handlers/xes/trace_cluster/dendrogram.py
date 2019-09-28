@@ -18,60 +18,113 @@ from trace_cluster.evaluation import factory
 from pm4py.visualization.common.utils import get_base64_from_file
 from pm4py.visualization.graphs import factory as graphs_factory
 from pm4py.algo.filtering.log.attributes import attributes_filter
+from pm4py.algo.discovery.alpha import factory as alpha_miner
+from pm4py.visualization.petrinet import factory as pn_vis_factory
 import base64
+
+
+# get the triple group of nodes
+def bfs(tree):
+    queue = []
+    output = []
+    queue.append(tree)
+    while queue:
+        # element in queue is waiting to become root and splited into child
+        # root is the first ele of queue
+        root = queue.pop(0)
+        if len(root['children']) > 0:
+            name = [root['name']]
+            for child in root['children']:
+                queue.append(child)
+                name.append(child['name'])
+            output.append(name)
+
+    return output
 
 
 def get_dendrogram_svg(log, variant='VARIANT_DMM_LEVEN', parameters=None):
     if parameters is None:
         parameters = {}
 
-    # percent = 1
-    # alpha = 0.5
-    #
-    # list_of_vals = []
-    # list_log = []
-    # list_of_vals_dict = attributes_filter.get_trace_attribute_values(log, 'index')
-    # # ta = (attributes_filter.get_all_trace_attributes_from_log(log))
-    # # ea = (attributes_filter.get_all_event_attributes_from_log(log))
-    # # print(ta|ea)
-    # # print(list_of_vals_dict.keys())
-    # list_of_vals_keys = list(list_of_vals_dict.keys())
-    # for i in range(len(list_of_vals_keys)):
-    #     list_of_vals.append(list_of_vals_keys[i])
-    #
-    # for i in range(len(list_of_vals)):
-    #     logsample = merge_log.log2sublog(log, list_of_vals[i])
-    #     list_log.append(logsample)
-    #
-    #
-    # y = fake_log_eval.eval_avg_leven(list_log, percent, alpha)
-    # Z = linkage(y, method='average')
-    #
-    #
-    # # Create dictionary for labeling nodes by their IDs
-    #
-    # id2name = dict(zip(range(len(list_of_vals)), list_of_vals))
-    #
-    # T = to_tree(Z, rd=False)
-    # d3Dendro = dict(children=[], name="Root1")
-    # merge_log.add_node(T, d3Dendro)
-    #
-    # merge_log.label_tree(d3Dendro["children"][0],id2name)
-    # d3Dendro = d3Dendro["children"][0]
-    # d3Dendro["name"] = 'root'
-    # ret = d3Dendro
-    # print(ret)
+    selectedNode = parameters["selectedNode"] if "selectedNode" in parameters else 'root'
 
-    ret = factory.apply(log, variant=variant, parameters=parameters)
-    print("variant",variant)
+    (ret, leafname) = factory.apply(log, variant=variant, parameters=parameters)
+    print("variant", variant)
+
+    trilist = bfs(ret)
+    # replace root with actual element
+    # trilist[0][0] = trilist[0][1] + '-' + trilist[0][2]
+
+    rootlist = []
+    for ele in trilist:
+        rootlist.append(ele[0])
+
+    print("selectednode", selectedNode)
+    print('rootlist', rootlist)
+
+    if selectedNode == 'root':
+
+        # slice_num = 2
+        # index_list = []
+        # length = int(len(leafname) / slice_num)
+        #
+        # slice_val = []
+        # # slice list_of_vals 2 groups here, then 0:4 and 4:8
+        # for i in range(slice_num):
+        #     slice_val.append(leafname[i * length:(i + 1) * length])
+        # # print(slice_val)
+        select_index = rootlist.index(selectedNode)
+        root_triple = trilist[select_index]
+        root_triple[0] = root_triple[1] + '-' + root_triple[2]
+        slice_val = []
+        for ele in root_triple:
+            slice_val.append(ele.split('-'))
+        # print("slice_val", slice_val)
+        gviz_list = []
+        for i in range(len(slice_val)):
+            logsample = merge_log.logslice(log, slice_val[i])
+            net, initial_marking, final_marking = alpha_miner.apply(logsample)
+            parameters = {"format": "svg"}
+            gviz = pn_vis_factory.apply(net, initial_marking, final_marking, parameters={"format": "svg"})
+            filenname = "C:\\Users\yukun\\PycharmProjects\\pm4py-source\\trace_cluster\\evaluation\\" + "pn" + str(
+                i + 1) + ".svg"
+            pn_vis_factory.save(gviz, filenname)
+            gviz_list.append(filenname)
+    elif selectedNode in rootlist:
+        select_index = rootlist.index(selectedNode)
+        # get the triple-- one parent and two children
+        show_triple = trilist[select_index]
+
+        gviz_list = []
+
+        # modify data structure
+        slice_val = []
+        for ele in show_triple:
+            slice_val.append(ele.split('-'))
+
+        for i in range(len(slice_val)):
+            logsample = merge_log.logslice(log, slice_val[i])
+            net, initial_marking, final_marking = alpha_miner.apply(logsample)
+            parameters = {"format": "svg"}
+            gviz = pn_vis_factory.apply(net, initial_marking, final_marking, parameters={"format": "svg"})
+            filenname = "C:\\Users\yukun\\PycharmProjects\\pm4py-source\\trace_cluster\\evaluation\\" + "pn" + str(
+                i + 1) + ".svg"
+            pn_vis_factory.save(gviz, filenname)
+            gviz_list.append(filenname)
 
 
-    gviz = 'C:\\Users\\yukun\\PycharmProjects\\pm4py-source\\trace_cluster\\evaluation\\cluster.svg'
+    base64_list = []
+    gviz_base64_list = []
 
-    gviz_base64 = base64.b64encode(str(gviz).encode('utf-8'))
+    for gviz in gviz_list:
+        base64_list.append(get_base64_from_file(gviz))
+        gviz_base64_list.append(base64.b64encode(str(gviz).encode('utf-8')))
 
-
-    return get_base64_from_file(gviz), gviz_base64, ret
+    # gviz_base64 = base64.b64encode(str(gviz).encode('utf-8'))
+    #
+    #
+    # return get_base64_from_file(gviz), gviz_base64, ret
+    return base64_list, gviz_base64_list, ret
 
 
 if __name__ == "__main__":
