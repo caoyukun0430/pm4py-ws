@@ -290,10 +290,11 @@ def get_case_duration():
                     data_x.append(ret[i][0])
                     data_y.append(ret[i][1])
 
-                dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "points": ret,"points_x":data_x, "points_y":data_y}
+                dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "points": ret,
+                          "points_x": data_x, "points_y": data_y}
             except:
                 logging.error(traceback.format_exc())
-                dictio = {"base64": "", "gviz_base64": "", "points": [],"points_x":[],"points_y":[]}
+                dictio = {"base64": "", "gviz_base64": "", "points": [], "points_x": [], "points_y": []}
             Commons.semaphore_matplot.release()
 
         logging.info(
@@ -338,10 +339,11 @@ def get_events_per_time():
                     data_x.append(ret[i][0])
                     data_y.append(ret[i][1])
 
-                dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "points": ret,"points_x":data_x, "points_y":data_y}
+                dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "points": ret,
+                          "points_x": data_x, "points_y": data_y}
             except:
                 logging.error(traceback.format_exc())
-                dictio = {"base64": "", "gviz_base64": "", "points": [],"points_x":[],"points_y":[]}
+                dictio = {"base64": "", "gviz_base64": "", "points": [], "points_x": [], "points_y": []}
             Commons.semaphore_matplot.release()
 
         logging.info(
@@ -350,6 +352,7 @@ def get_events_per_time():
     ret = jsonify(dictio)
 
     return ret
+
 
 @PM4PyServices.app.route("/getDendrogram", methods=["GET"])
 def get_dendrogram():
@@ -369,7 +372,7 @@ def get_dendrogram():
     # reads the requested process name
     process = request.args.get('process', default='receipt', type=str)
 
-    logging.info("get_events_per_time start session=" + str(session) + " process=" + str(process))
+    logging.info("get_dendrogram start session=" + str(session) + " process=" + str(process))
 
     dictio = {}
 
@@ -379,15 +382,24 @@ def get_dendrogram():
             Commons.semaphore_matplot.acquire()
             try:
                 clusterMethod = request.args.get('clusterMethod', default='VARIANT_DMM_LEVEN', type=str)
-                print("clustermethod",'VARIANT_DMM_LEVEN')
-                base64, gviz_base64, ret = lh.get_handler_for_process_and_session(process,
-                                                                                  session).get_dendrogram_svg(variant=clusterMethod)
+                selectedNode = request.args.get('selectedNode', default='root', type=str)
+                print("clustermethod", 'VARIANT_DMM_LEVEN')
+                base64_list, gviz_base64_list, ret = lh.get_handler_for_process_and_session(process,
+                                                                                            session).get_dendrogram_svg(
+                    variant=clusterMethod, parameters={
+                        "selectedNode": selectedNode})
+                decode_base64_list = []
+                decode_gviz_base64_list = []
+                for i in range(len(base64_list)):
+                    decode_base64_list.append({"base64": base64_list[i].decode('utf-8')})
+                    decode_gviz_base64_list.append({"gviz_base64": gviz_base64_list[i].decode('utf-8')})
 
-                dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "d3Dendro": ret}
+                # dictio = {"base64": base64.decode('utf-8'), "gviz_base64": gviz_base64.decode('utf-8'), "d3Dendro": ret}
+                dictio = {"base64": decode_base64_list, "gviz_base64": decode_gviz_base64_list, "d3Dendro": ret}
 
             except:
                 logging.error(traceback.format_exc())
-                dictio = {"base64": "", "gviz_base64": "", "d3Dendro":[]}
+                # dictio = {"base64": "", "gviz_base64": "", "d3Dendro":[]}
             Commons.semaphore_matplot.release()
 
         logging.info(
@@ -396,6 +408,7 @@ def get_dendrogram():
     ret = jsonify(dictio)
 
     return ret
+
 
 @PM4PyServices.app.route("/getSNA", methods=["GET"])
 def get_sna():
@@ -423,7 +436,7 @@ def get_sna():
             if lh.check_user_log_visibility(user, process):
                 metric = request.args.get('metric', default='handover', type=str)
                 threshold = request.args.get('threshold', default=0.0, type=float)
-                print("entrymetric",metric)
+                print("entrymetric", metric)
                 sna = lh.get_handler_for_process_and_session(process, session).get_sna(variant=metric, parameters={
                     "weight_threshold": threshold})
 
@@ -1201,9 +1214,11 @@ def get_user_log_visibilities():
 
             logging.info("get_user_log_visibilities complete session=" + str(session) + " this_user=" + str(this_user))
 
-            return jsonify({"success": True, "sorted_users": sorted_users, "sorted_logs": sorted_logs, "user_log_visibility": user_log_vis})
+            return jsonify({"success": True, "sorted_users": sorted_users, "sorted_logs": sorted_logs,
+                            "user_log_visibility": user_log_vis})
 
     return jsonify({"success": False})
+
 
 @PM4PyServices.app.route("/addUserLogVisibility", methods=["GET"])
 def add_user_log_visibility():
