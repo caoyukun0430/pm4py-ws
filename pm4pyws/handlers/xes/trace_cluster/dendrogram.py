@@ -1,24 +1,11 @@
-import matplotlib.pyplot as plt
-from functools import reduce
-import pandas as pd
-import scipy.spatial
-import scipy.cluster
-import numpy as np
-import json
-from functools import reduce
-from scipy.cluster.hierarchy import dendrogram, linkage, cophenet, to_tree
-from scipy.spatial.distance import squareform
-from trace_cluster import filter_subsets
 from pm4py.objects.log.importer.xes import factory as xes_importer
-from pm4py.objects.log.log import EventLog
-from pm4py.util import constants
-from trace_cluster.evaluation import fake_log_eval
 from trace_cluster.merge_log import merge_log
 from trace_cluster.evaluation import factory
 from pm4py.visualization.common.utils import get_base64_from_file
 from pm4py.visualization.graphs import factory as graphs_factory
 from pm4py.algo.filtering.log.attributes import attributes_filter
 from pm4py.algo.discovery.alpha import factory as alpha_miner
+from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.visualization.petrinet import factory as pn_vis_factory
 import base64
 
@@ -47,6 +34,8 @@ def get_dendrogram_svg(log, variant='VARIANT_DMM_LEVEN', parameters=None):
         parameters = {}
 
     selectedNode = parameters["selectedNode"] if "selectedNode" in parameters else 'root'
+
+    ATTR_NAME = 'responsible'
 
     (ret, leafname) = factory.apply(log, variant=variant, parameters=parameters)
     print("variant", variant)
@@ -82,12 +71,11 @@ def get_dendrogram_svg(log, variant='VARIANT_DMM_LEVEN', parameters=None):
         # print("slice_val", slice_val)
         gviz_list = []
         for i in range(len(slice_val)):
-            logsample = merge_log.logslice(log, slice_val[i])
-            net, initial_marking, final_marking = alpha_miner.apply(logsample)
+            logsample = merge_log.logslice(log, slice_val[i],ATTR_NAME)
+            net, initial_marking, final_marking = inductive_miner.apply(logsample)
             parameters = {"format": "svg"}
             gviz = pn_vis_factory.apply(net, initial_marking, final_marking, parameters={"format": "svg"})
-            filenname = "C:\\Users\yukun\\PycharmProjects\\pm4py-source\\trace_cluster\\evaluation\\" + "pn" + str(
-                i + 1) + ".svg"
+            filenname = "pn" + str(i + 1) + ".svg"
             pn_vis_factory.save(gviz, filenname)
             gviz_list.append(filenname)
     elif selectedNode in rootlist:
@@ -103,12 +91,11 @@ def get_dendrogram_svg(log, variant='VARIANT_DMM_LEVEN', parameters=None):
             slice_val.append(ele.split('-'))
 
         for i in range(len(slice_val)):
-            logsample = merge_log.logslice(log, slice_val[i])
-            net, initial_marking, final_marking = alpha_miner.apply(logsample)
+            logsample = merge_log.logslice(log, slice_val[i],ATTR_NAME)
+            net, initial_marking, final_marking = inductive_miner.apply(logsample)
             parameters = {"format": "svg"}
             gviz = pn_vis_factory.apply(net, initial_marking, final_marking, parameters={"format": "svg"})
-            filenname = "C:\\Users\yukun\\PycharmProjects\\pm4py-source\\trace_cluster\\evaluation\\" + "pn" + str(
-                i + 1) + ".svg"
+            filenname = "pn" + str(i + 1) + ".svg"
             pn_vis_factory.save(gviz, filenname)
             gviz_list.append(filenname)
 
@@ -128,5 +115,5 @@ def get_dendrogram_svg(log, variant='VARIANT_DMM_LEVEN', parameters=None):
 
 
 if __name__ == "__main__":
-    log = xes_importer.apply("C:\\Users\\yukun\\PycharmProjects\\pm4py-ws\\logs\\mergedlog_1EKQ.xes")
+    log = xes_importer.apply("C:\\Users\\yukun\\PycharmProjects\\pm4py-ws\\logs\\mergedlog_all_1MEF.xes")
     get_dendrogram_svg(log)

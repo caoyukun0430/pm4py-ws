@@ -68,9 +68,16 @@ def apply(log, parameters=None):
     gviz_base64 = base64.b64encode(str(gviz).encode('utf-8'))
 
     ret_graph = get_graph.get_graph_from_dfg(dfg, start_activities, end_activities)
+    print("graph",ret_graph)
 
     net, im, fm = dfg_conv_factory.apply(dfg, parameters={"start_activities": start_activities,
                                                           "end_activities": end_activities})
 
     return get_base64_from_gviz(gviz), export_petri_as_string(net, im,
                                                               fm), ".pnml", "xes", activities, start_activities, end_activities, gviz_base64, ret_graph, "dfg", "freq", None, "", activity_key
+
+
+# if __name__ == "__main__":
+#     from pm4py.objects.log.importer.xes import factory as xes_importer
+#     log = xes_importer.apply("C:\\Users\\yukun\\PycharmProjects\\pm4py-source\\trace_cluster\\merge_log\\mergedlog_2.xes")
+#     apply(log)
