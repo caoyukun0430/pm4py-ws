@@ -52,7 +52,9 @@ python main.py
 And reach the URL http://localhost:5000/index.html
 
 ***
-If you want to use our trace cluster interface in pm4pyws, other than following the commands above, make sure you also copy trace_cluster folder at `https://github.com/caoyukun0430/pm4py-source/tree/yukun_paper/trace_cluster` into your local pm4pyws environment path. For example I put my `trace_cluster` folder at path `C:\Users\yukun\Anaconda3\envs\HIWI\Lib\trace_cluster`
+If you want to use our trace cluster interface in pm4pyws, other than following the commands above, make sure you also copy trace_cluster folder at `https://github.com/caoyukun0430/pm4py-source/tree/yukun_paper/trace_cluster` into your local environment path for pm4pyws. For example I put my `trace_cluster` folder at path `C:\Users\yukun\Anaconda3\envs\HIWI\Lib\trace_cluster`
 
 ## Demo screenshot
 Here is how our user intreface looks like:  
+
+We offer user to click into any nodes he/she is interested in ,and model based on this node will be shown automatically. And we offer users to select the cluster methods he/she is interested in and do pre-filtering if needed
