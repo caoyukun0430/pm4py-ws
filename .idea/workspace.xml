@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50e2bb1e-248a-4829-9cf9-7fdc72c1d0fd" name="Default" comment="">
+    <list default="true" id="dac8c83b-5afe-4d94-8850-07d79a9c9fc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pm4py-ws.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pm4py-ws.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event_logs.db" beforeDir="false" afterPath="$PROJECT_DIR$/event_logs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp2" beforeDir="false" afterPath="$PROJECT_DIR$/webapp2" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,44 +15,116 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-377185761">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="1" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="408">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/dfg/dfg_dist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            <state>
+              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/merge_log/merge_log.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18326">
+              <caret line="1109" column="6" selection-start-line="1109" selection-start-column="6" selection-end-line="1109" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pm4pyws/entrypoint.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6324">
+              <caret line="388" column="55" selection-start-line="388" selection-start-column="55" selection-end-line="388" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/xes/xes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5185">
+              <caret line="328" column="41" selection-start-line="328" selection-start-column="41" selection-end-line="328" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation/factory.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7735">
+              <caret line="472" column="31" selection-start-line="472" selection-start-column="26" selection-end-line="472" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp2/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp2/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitmodules">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -65,18 +140,54 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.ts</find>
+      <find>gnew</find>
+      <find>p-8</find>
+      <find>gra</find>
+      <find>echarts</find>
+      <find>container</find>
+      <find>500</find>
+      <find>newdata1</find>
+      <find>sma</find>
+      <find>data</find>
+      <find>model-container</find>
+      <find>$</find>
+      <find>docu</find>
+      <find>pmodel2</find>
+      <find>ech</find>
+      <find>drag-bo</find>
+      <find>model-info-box__label</find>
+      <find>NgxEchartsModule</find>
+      <find>echa</find>
+      <find>processschema</find>
+      <find>typeOfModelIsChanged</find>
+      <find>decoration</find>
+      <find>drag-box--content</find>
+      <find>clusterMethod</find>
+      <find>appMenu</find>
+      <find>enableProcessModelChoice</find>
+      <find>option</find>
+      <find>cluster</find>
+      <find>myChart</find>
+      <find>trace-cluster-container</find>
+      <find>nameli</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\yukun\PycharmProjects\pm4py-ws</dir>
+      <dir>C:\Users\yukun\PycharmProjects\pm4py-ws\pm4pyws</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/webapp2" value="ft-withoutdendrogram" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/handlers/parquet/parquet.py" />
-        <option value="$PROJECT_DIR$/handlers/parquet/process_schema/dfg_freq/calculate.py" />
-        <option value="$PROJECT_DIR$/handlers/parquet/process_schema/dfg_freq/get_vis.py" />
         <option value="$PROJECT_DIR$/handlers/parquet/process_schema/factory.py" />
         <option value="$PROJECT_DIR$/pm4pyws/handlers/parquet/process_schema/factory.py" />
         <option value="$PROJECT_DIR$/test1.py" />
@@ -88,17 +199,56 @@
         <option value="$PROJECT_DIR$/pm4pyws/main_service.py" />
         <option value="$PROJECT_DIR$/pm4pyws/handlers/parquet/statistics/case_duration.py" />
         <option value="$PROJECT_DIR$/pm4pyws/handlers/parquet/statistics/events_per_time.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation/fake_log_eval.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/filtering/log/attributes/attributes_filter.py" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/attributes-filter/attributes-filter.component.ts" />
+        <option value="$PROJECT_DIR$/pm4pyws/handlers/xes/sna/get_sna.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/enhancement/sna/factory.py" />
+        <option value="$PROJECT_DIR$/pm4pyws/handlers/xes/xes.py" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/real-ws.module.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/timeframe-filter/timeframe-filter.component.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/dendrogram-graph/dendrogram-graph.component.scss" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/layouts/full/full-layout.component.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/shared/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/shared/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/numeric-attribute-filter/numeric-attribute-filter.component.ts" />
+        <option value="$PROJECT_DIR$/pm4pyws/handlers/xes/process_schema/dfg_freq/get_vis.py" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/variants/graph-variant-traces/graph-variant-traces.component.ts" />
+        <option value="$PROJECT_DIR$/pm4pyws/entrypoint.py" />
+        <option value="$PROJECT_DIR$/webapp2/angular.json" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.scss" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/statistics/statistics.component.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/timeframe-filter/timeframe-filter.component.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/dendrogram-graph/dendrogram-graph.component.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/performance-filter/performance-filter.component.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/index.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/dendrogram-graph/dendrogram-graph.component.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/real-ws-routing.module.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/filter-service.service.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.ts" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/merge_log/merge_log.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation/factory.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/dfg/dfg_dist.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/discovery/inductive/versions/dfg/data_structures/subtree_imdfb.py" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.ts" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.html" />
+        <option value="$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.scss" />
+        <option value="$PROJECT_DIR$/pm4pyws/handlers/xes/trace_cluster/dendrogram.py" />
+        <option value="$PROJECT_DIR$/.gitmodules" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1043" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-220" />
+    <option name="width" value="1936" />
+    <option name="height" value="1186" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -111,18 +261,53 @@
               <item name="pm4py-ws" type="b2602c69:ProjectViewProjectNode" />
               <item name="pm4py-ws" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pm4py-ws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pm4py-ws" type="462c0819:PsiDirectoryNode" />
+              <item name="pm4pyws" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pm4py-ws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="pm4py-ws" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\yukun\PycharmProjects\pm4py-ws" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="ts.external.directory.path" value="C:\Users\yukun\PycharmProjects\pm4py-ws\webapp2\node_modules\typescript\lib" />
+  </component>
+  <component name="PyFindUsagesOptions">
+    <option name="isSearchForTextOccurrences" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yukun\Anaconda3\envs\HIWI\Lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\berti\pm4py-ws\pm4pyws" />
     </key>
@@ -139,7 +324,73 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.dendrogram">
+    <configuration name="dendrogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pm4py-ws" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pm4pyws/handlers/xes/trace_cluster" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pm4pyws/handlers/xes/trace_cluster/dendrogram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="factory" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pm4py-ws" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation/factory.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_vis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pm4py-ws" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pm4pyws/handlers/xes/process_schema/dfg_freq" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pm4pyws/handlers/xes/process_schema/dfg_freq/get_vis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pm4py-ws" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,6 +403,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -163,6 +415,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dendrogram" />
+        <item itemvalue="Python.factory" />
+        <item itemvalue="Python.get_vis" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -172,107 +427,527 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="50e2bb1e-248a-4829-9cf9-7fdc72c1d0fd" name="Default" comment="" />
+      <changelist id="dac8c83b-5afe-4d94-8850-07d79a9c9fc9" name="Default Changelist" comment="" />
       <created>1551775507022</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551775507022</updated>
+      <workItem from="1567885268337" duration="581000" />
+      <workItem from="1567885890422" duration="3999000" />
+      <workItem from="1567936593401" duration="24943000" />
+      <workItem from="1568018173729" duration="6637000" />
+      <workItem from="1568066358269" duration="1136000" />
+      <workItem from="1568118517937" duration="21218000" />
+      <workItem from="1568233206069" duration="4848000" />
+      <workItem from="1568296723739" duration="1211000" />
+      <workItem from="1568298438244" duration="1524000" />
+      <workItem from="1568314445112" duration="7076000" />
+      <workItem from="1568364874426" duration="6450000" />
+      <workItem from="1568451982689" duration="2601000" />
+      <workItem from="1568536248102" duration="9974000" />
+      <workItem from="1568635153554" duration="11442000" />
+      <workItem from="1568709662113" duration="19612000" />
+      <workItem from="1568751495576" duration="2413000" />
+      <workItem from="1568755229497" duration="300000" />
+      <workItem from="1568796548359" duration="1561000" />
+      <workItem from="1568969596687" duration="13899000" />
+      <workItem from="1569057497992" duration="26231000" />
+      <workItem from="1569142652037" duration="24109000" />
+      <workItem from="1569239615170" duration="6052000" />
+      <workItem from="1569276624355" duration="395000" />
+      <workItem from="1569314932628" duration="28077000" />
+      <workItem from="1569362893742" duration="161000" />
+      <workItem from="1569363089958" duration="818000" />
+      <workItem from="1569401012536" duration="14945000" />
+      <workItem from="1569488969095" duration="1586000" />
+      <workItem from="1569490599625" duration="24073000" />
+      <workItem from="1569575364470" duration="18564000" />
+      <workItem from="1569659611247" duration="18712000" />
+      <workItem from="1569747799511" duration="3142000" />
+      <workItem from="1569751042538" duration="2027000" />
+      <workItem from="1569784220077" duration="3150000" />
+      <workItem from="1569847507285" duration="922000" />
+      <workItem from="1569849815735" duration="105000" />
+      <workItem from="1569878575781" duration="4045000" />
+      <workItem from="1570033363415" duration="166000" />
+      <workItem from="1570092124922" duration="7926000" />
+      <workItem from="1570313173800" duration="644000" />
+      <workItem from="1570366553270" duration="1537000" />
+      <workItem from="1570371072218" duration="618000" />
+      <workItem from="1570391793145" duration="1275000" />
+      <workItem from="1570429250064" duration="1492000" />
+      <workItem from="1570442186730" duration="15000" />
+      <workItem from="1570457184490" duration="3064000" />
+      <workItem from="1570559892280" duration="73000" />
+      <workItem from="1570653224733" duration="816000" />
+      <workItem from="1571316105416" duration="650000" />
+      <workItem from="1571393028563" duration="595000" />
+      <workItem from="1571412994401" duration="286000" />
+      <workItem from="1571474172772" duration="601000" />
+      <workItem from="1571906483217" duration="138000" />
+      <workItem from="1571997297939" duration="1603000" />
+      <workItem from="1574177474522" duration="2671000" />
+      <workItem from="1574204855815" duration="74000" />
+      <workItem from="1574238727197" duration="3992000" />
+      <workItem from="1574242965146" duration="198000" />
+      <workItem from="1574243438659" duration="7169000" />
+      <workItem from="1574353406514" duration="27000" />
+      <workItem from="1574591335892" duration="680000" />
+      <workItem from="1574771065821" duration="1685000" />
+      <workItem from="1574942125291" duration="2246000" />
+      <workItem from="1574944789538" duration="1212000" />
+      <workItem from="1574964361874" duration="376000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="360370000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-220" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3315565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.29608938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12011173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="R Graphics" />
-      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49798927" visible="true" weight="0.38212928" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.2932961" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32960895" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.3297587" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15817694" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.29608938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.12011173" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49798927" visible="true" weight="0.34217876" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.2932961" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32960895" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.3297587" />
+    </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pm4py_ws$get_vis.coverage" NAME="get_vis Coverage Results" MODIFIED="1569145808297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pm4pyws/handlers/xes/process_schema/dfg_freq" />
+    <SUITE FILE_PATH="coverage/pm4py_ws$dendrogram.coverage" NAME="dendrogram Coverage Results" MODIFIED="1574239087677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pm4pyws/handlers/xes/trace_cluster" />
+    <SUITE FILE_PATH="coverage/pm4py_ws$factory.coverage" NAME="factory Coverage Results" MODIFIED="1574238881013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test1.py" />
-    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/parquet/process_schema/factory.py">
+    <entry file="file://$PROJECT_DIR$/webapp2/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/parquet/process_schema/dfg_freq/get_vis.py">
+    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/xes/process_schema/dfg_freq/get_vis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="992">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pm4py/statistics/traces/pandas/case_statistics.py" />
-    <entry file="file://$PROJECT_DIR$/pm4pyws/main_service.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pm4py/visualization/graphs/factory.py" />
-    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/parquet/parquet.py">
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/performance-filter/performance-filter.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/parquet/statistics/case_duration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="51">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/parquet/statistics/events_per_time.py">
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/timeframe-filter/timeframe-filter.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/shared/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2012">
+          <caret line="342" column="25" selection-start-line="342" selection-start-column="25" selection-end-line="342" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/attributes-filter/attributes-filter.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/node_modules/@angular/router/src/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-339">
+          <caret line="426" column="4" selection-start-line="426" selection-start-column="4" selection-end-line="426" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/dendrogram-graph/dendrogram-graph.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1569698730940" expanded="true" signature="74:110" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/attributes-filter/attributes-filter.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/timeframe-filter/timeframe-filter.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/dendrogram-graph/dendrogram-graph.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/real-ws-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/real-ws.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="48" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/filter-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="108" column="58" selection-start-line="108" selection-start-column="58" selection-end-line="108" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/node_modules/@angular/material/select/typings/select.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="218" column="13" selection-start-line="218" selection-start-column="13" selection-end-line="218" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/discovery/alpha/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="82" column="114" selection-start-line="82" selection-start-column="114" selection-end-line="82" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/pm4py-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/filtering/log/attributes/attributes_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/objects/stochastic_petri/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/util/business_hours.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/conformance/alignments/versions/state_equation_a_star.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/discovery/inductive/factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pm4pyws/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#mat-sidenav-content#0;n#mat-sidenav-container#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/objects/stochastic_petri/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7463">
+          <caret line="449" column="36" selection-start-line="449" selection-start-column="36" selection-end-line="449" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#mat-sidenav-content#0;n#mat-sidenav-container#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#mat-grid-tile#0;n#mat-grid-list#1;n#div#1;n#mat-sidenav-content#0;n#mat-sidenav-container#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/discovery/alpha/factory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/algo/discovery/inductive/versions/dfg/data_structures/subtree_imdfb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="347" column="37" selection-start-line="347" selection-start-column="37" selection-end-line="347" selection-end-column="37" />
           <folding>
-            <element signature="e#0#68#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/site-packages/pm4py/util/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/create_database_users.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_database_logs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/leven_dist/leven_dist_calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="595">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation/fake_log_eval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        <state relative-caret-position="-46">
+          <caret line="154" column="4" selection-start-line="154" selection-start-column="4" selection-end-line="154" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/xes/trace_cluster/dendrogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/tracecluster/trace-cluster/trace-cluster.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/dfg/dfg_dist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/merge_log/merge_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18326">
+          <caret line="1109" column="6" selection-start-line="1109" selection-start-column="6" selection-end-line="1109" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pm4pyws/entrypoint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6324">
+          <caret line="388" column="55" selection-start-line="388" selection-start-column="55" selection-end-line="388" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pm4pyws/handlers/xes/xes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5185">
+          <caret line="328" column="41" selection-start-line="328" selection-start-column="41" selection-end-line="328" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/HIWI/Lib/trace_cluster/evaluation/factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/src/app/real-ws/pmodel/pmodel.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7735">
+          <caret line="472" column="31" selection-start-line="472" selection-start-column="26" selection-end-line="472" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp2/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitmodules">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
