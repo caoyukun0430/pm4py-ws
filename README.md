@@ -57,4 +57,4 @@ If you want to use our trace cluster interface in pm4pyws, other than following 
 ## Demo screenshot
 Here is how our user intreface looks like:  
 
-We offer user to click into any nodes he/she is interested in ,and model based on this node will be shown automatically. And we offer users to select the cluster methods he/she is interested in and do pre-filtering if needed
+We offer user to click into any nodes he/she is interested in ,and model based on this node will be shown automatically. And we offer users to select the cluster methods he/she is interested in and do pre-filtering if needed.
